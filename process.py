@@ -73,6 +73,7 @@ def process_pdfs(input_folder):
             os.makedirs(f'website/posters/{identifier}', exist_ok=True)
             create_screenshot(pdf_path, f'website/posters/{identifier}')
             create_poster_page(identifier, metadata['name'])
+            shutil.copyfile(pdf_path, f'website/posters/{identifier}/{pdf_path}')
             posters.append(identifier)
             print(f"Screenshot created for {filename}")
 
@@ -92,5 +93,6 @@ if __name__ == "__main__":
         shutil.rmtree('website')
     os.makedirs('website', exist_ok=True)
     os.makedirs('website/posters', exist_ok=True)
-    
+    shutil.copyfile('styles.css', 'website/styles.css')
+
     process_pdfs(input_folder)
