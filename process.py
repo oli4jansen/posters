@@ -73,7 +73,7 @@ def process_pdfs(input_folder):
             os.makedirs(f'website/posters/{identifier}', exist_ok=True)
             create_screenshot(pdf_path, f'website/posters/{identifier}')
             create_poster_page(identifier, metadata['name'])
-            shutil.copyfile(pdf_path, f'website/posters/{identifier}/{pdf_path}')
+            shutil.copyfile(pdf_path, f'website/posters/{identifier}/{filename}')
             posters.append(identifier)
             print(f"Screenshot created for {filename}")
 
