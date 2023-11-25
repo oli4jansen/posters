@@ -3,7 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'IBM Plex Sans';
 }
 
 /* Prevent font size inflation */
@@ -151,11 +151,12 @@ textarea:not([rows]) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 16px;
+  padding: 0;
 }
 .details h3 {
   font-size: 28px;
   font-weight: 500;
+  margin-right: 12px;
 }
 .button {
   display: inline-block;
