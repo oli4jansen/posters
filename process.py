@@ -77,7 +77,7 @@ def process_pdfs(input_folder):
             posters.append(identifier)
             print(f"Screenshot created for {filename}")
 
-    listed_posters_for_index = '\n\n'.join(map(lambda p: f'<a href="/posters/{p}" class="poster"><img src="/posters/{p}/{p}.png" /></a>', posters))
+    listed_posters_for_index = '\n\n'.join(map(lambda p: f'<a href="./posters/{p}" class="poster"><img src="./posters/{p}/{p}.png" /></a>', posters))
     # Replace {CONTENT} with the specified string
     index_content = index_content.replace('{ #POSTERS }', listed_posters_for_index)
 
