@@ -86,7 +86,7 @@ def process_pdfs(input_folder):
 
 
 if __name__ == "__main__":
-    input_folder = "queue"
+    input_folder = "data"
 
     if os.path.exists('website'):
         shutil.rmtree('website')
