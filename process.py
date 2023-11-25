@@ -88,7 +88,8 @@ def process_pdfs(input_folder):
 if __name__ == "__main__":
     input_folder = "queue"
 
-    shutil.rmtree('website')
+    if os.path.exists('website'):
+        shutil.rmtree('website')
     os.makedirs('website', exist_ok=True)
     os.makedirs('website/posters', exist_ok=True)
     
