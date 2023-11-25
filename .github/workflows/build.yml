@@ -10,6 +10,7 @@ jobs:
     permissions:
       contents: 'read'
       id-token: 'write'
+      pages: 'write'
     steps:
       - name: checkout repo content
         uses: actions/checkout@v4 # checkout the repository content
