@@ -99,7 +99,11 @@ textarea:not([rows]) {
 }
 
 .subheading {
-  height: 52px;
+  height: auto;
+  padding-bottom: 16px;
+}
+
+.subheading a {
 }
 
 .heading .logo {
